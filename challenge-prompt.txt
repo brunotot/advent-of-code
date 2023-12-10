@@ -1,0 +1,5 @@
+Given the text of a programming challenge, extract information related to the input and expected output. 
+Format the response in markdown code which should be copy-paste ready (escape all backticks so the chat doesn't render it). 
+Here is the whole text of the challenge:
+
+TEXT
