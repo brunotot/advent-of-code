@@ -1,33 +1,17 @@
-# Input and Output for the Programming Challenge
+# Day 1: Trebuchet?! - Part 2
 
-## Input
+Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid "digits".
 
-- A list of lines containing a mix of spelled-out digits and numeric digits.
-- Spelled-out digits: "one", "two", "three", "four", "five", "six", "seven", "eight", "nine".
-- Example lines from the challenge:
-  - "two1nine"
-  - "eightwothree"
-  - "abcone2threexyz"
-  - "xtwone3four"
-  - "4nineeightseven2"
-  - "zoneight234"
-  - "7pqrstsixteen"
+Equipped with this new information, you now need to find the real first and last digit on each line. For example:
 
-## Expected Output
+- two1nine
+- eightwothree
+- abcone2threexyz
+- xtwone3four
+- 4nineeightseven2
+- zoneight234
+- 7pqrstsixteen
 
-- Identify the real first and last digit (numeric or spelled-out) on each line and convert them to their numeric form.
-- Combine these digits to form a two-digit number for each line.
-- Example outputs for the above lines:
-  - "two1nine" → 29
-  - "eightwothree" → 83
-  - "abcone2threexyz" → 13
-  - "xtwone3four" → 24
-  - "4nineeightseven2" → 42
-  - "zoneight234" → 14
-  - "7pqrstsixteen" → 76
-- Sum these two-digit numbers to find the total calibration value.
-- For the example lines, the total sum is 29 + 83 + 13 + 24 + 42 + 14 + 76 = 281.
+In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Adding these together produces 281.
 
-## Final Task
-
-- Calculate the total sum of all the calibration values for your given list of lines.
+What is the sum of all of the calibration values?
