@@ -1,18 +1,3 @@
-export type PlayingCard =
-  | "2"
-  | "3"
-  | "4"
-  | "5"
-  | "6"
-  | "7"
-  | "8"
-  | "9"
-  | "T"
-  | "J"
-  | "Q"
-  | "K"
-  | "A";
-
 export type PlayerHand = {
   hand: string;
   bid: number;
@@ -23,7 +8,7 @@ export type HandResultSortComponent = {
   type: number;
 };
 
-export const PLAYING_CARDS: PlayingCard[] = [
+export const PLAYING_CARDS = [
   "2",
   "3",
   "4",
@@ -37,7 +22,9 @@ export const PLAYING_CARDS: PlayingCard[] = [
   "Q",
   "K",
   "A",
-];
+] as const;
+
+export type PlayingCard = (typeof PLAYING_CARDS)[number];
 
 export const HandStrength = {
   HIGH_CARD: 1,
